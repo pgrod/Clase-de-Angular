@@ -1,0 +1,17 @@
+.card-categoria {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+}
+
+.card-categoria h2 {
+    color: #6c4a3c;
+}
+
+.card-categoria h3 {
+    color: #333333;
+}
+

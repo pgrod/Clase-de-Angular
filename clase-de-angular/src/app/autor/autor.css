@@ -1,0 +1,21 @@
+.card-autor {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+}
+
+.card-autor h2 {
+    color: #6c4a3c;
+}
+
+.card-autor h3 {
+    color: #333333;
+}
+
+.card-autor p {
+    color: #666666;
+    line-height: 1.5;
+}
