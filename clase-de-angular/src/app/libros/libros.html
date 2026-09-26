@@ -1,0 +1,27 @@
+<h1>Lista de libros</h1>
+
+@for (libro of librosFiltrados; track libro.id) {
+  <app-libro [libro]="libro"></app-libro>
+}
+
+<hr>
+
+<h2>Libros obtenidos de Open Library</h2>
+
+@for (libroApi of librosApi; track libroApi.key) {
+
+  <div class="libro-api">
+    <h3>{{ libroApi.title }}</h3>
+
+    <p>
+      Autor:
+      {{ libroApi.author_name?.[0] || 'Autor desconocido' }}
+    </p>
+
+    <p>
+      Primera publicación:
+      {{ libroApi.first_publish_year || 'No disponible' }}
+    </p>
+  </div>
+
+}

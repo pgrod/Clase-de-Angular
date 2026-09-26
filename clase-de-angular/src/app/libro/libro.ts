@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ILibro} from '../models/interface/ILibro';
+import { Component, Input } from '@angular/core';
+import { ILibro } from '../models/interface/ILibro';
 
 @Component({
   selector: 'app-libro',
@@ -8,8 +8,7 @@ import { ILibro} from '../models/interface/ILibro';
   styleUrl: './libro.css',
 })
 export class Libro {
-    libro: ILibro = {
-        titulo:'Percy Jackson y el ladrón del rayo',
-        descripcion:'Percy Jackson es un joven que descubre que es un semidiós, hijo de Poseidón, y se embarca en una peligrosa aventura para recuperar el rayo robado de Zeus y evitar una guerra entre los dioses del Olimpo.'
-    };
+
+  @Input() libro!: ILibro;
+
 }

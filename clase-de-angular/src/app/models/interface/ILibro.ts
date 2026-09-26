@@ -1,4 +1,6 @@
 export interface ILibro {
-    titulo: string;
-    descripcion: string;
+  id: number;
+  titulo: string;
+  descripcion: string;
+  paginas: number;
 }

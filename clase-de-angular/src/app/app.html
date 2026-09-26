@@ -1,9 +1,9 @@
 <h1>Biblioteca de Libros</h1>
 
-<div class="contenedor">
-    <app-libro></app-libro>
+<nav>
+  <a routerLink="/libros">Libros</a>
+  <a routerLink="/autor">Autor</a>
+  <a routerLink="/categoria">Categoría</a>
+</nav>
 
-    <app-autor></app-autor>
-
-    <app-categoria></app-categoria>
-</div>
+<router-outlet></router-outlet>

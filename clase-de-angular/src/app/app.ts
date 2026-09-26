@@ -1,11 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Autor } from './autor/autor';
-import { Categoria } from './categoria/categoria';
-import { Libro } from './libro/libro';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  imports: [Libro, Autor, Categoria],
+  imports: [RouterOutlet, RouterLink],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
